@@ -25,7 +25,7 @@ async def jarvis_core(update: Update, context: ContextTypes.DEFAULT_TYPE):
     
     # 1. Obtener respuesta de Gemini
     response = client.models.generate_content(
-        model='gemini-2.5-flash',
+        model='gemini-3.6-flash',
         contents=user_text,
         config={'system_instruction': SYSTEM_PROMPT}
     )
